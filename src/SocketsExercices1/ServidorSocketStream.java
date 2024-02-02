@@ -10,7 +10,7 @@ public class ServidorSocketStream {
         System.out.println("Creando socket servidor");
         try (ServerSocket serverSocket = new ServerSocket();) {
             System.out.println("Realizando el bind");
-            InetSocketAddress addr = new InetSocketAddress("10.230.162.148", 5555);
+            InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
             //asigna el socket a una dirección y puerto
             serverSocket.bind(addr);
             System.out.println("Aceptando conexiones");

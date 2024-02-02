@@ -12,7 +12,7 @@ public class ClienteSocketStream {
             // Para indicar la dirección IP y el número de puerto del socket stream servidor
             // al que se desea conectar, el método connect() hace uso de un objeto
             // de la clase java.net.InetSocketAddress.
-            InetSocketAddress addr = new InetSocketAddress("10.230.162.95", 5555);
+            InetSocketAddress addr = new InetSocketAddress("localhost", 5555);
             clientSocket.connect(addr);
             try (InputStream is = clientSocket.getInputStream();
                  OutputStream os = clientSocket.getOutputStream();
